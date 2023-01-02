@@ -10,4 +10,7 @@
 #
 class Todo < ApplicationRecord
   validates :title, presence: true
+  after_update_commit { broadcast_append_to 'todos' }
+
+  enum status: %i[incomplete complete].freeze
 end
