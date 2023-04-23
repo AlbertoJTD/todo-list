@@ -1,24 +1,32 @@
-# README
+# Todo List App ✅
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/89556233/233819677-0f5dd8c4-124b-45e8-99d4-f6504f8354d4.gif" width="834" height="548" style="text-align:center;">
+</p>
 
-Things you may want to cover:
+## Minimum requirements
+- Ruby 3.2.1
+- Rails 7.0.4
 
-* Ruby version
+# Libraries
+- [Turbo](https://turbo.hotwired.dev/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [PosgreSQL](https://www.postgresql.org/)
 
-* System dependencies
+## Configuration
+1. Create the data base and run the migrations:
+```ruby
+rails db:create db:migrate
+```
 
-* Configuration
+2. Install the gems
+```ruby
+bundle install
+```
 
-* Database creation
+## Start the server
+After pre-configuring the application, use the following command to run the server:
+```ruby
+rails s
+```
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
